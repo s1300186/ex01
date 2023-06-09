@@ -5,8 +5,13 @@
 int main ()
 {
   int x,y;
+  char c[10];
   srand(time(NULL));
 
+  printf("What is your name?\n");
+  printf("> ");
+  scanf("%s",c);
+  printf("\nHwllo, %s!\n",c);
   x=rand()%6+1;
   y=rand()%6+1;
   printf("Rolling dice...\n");
